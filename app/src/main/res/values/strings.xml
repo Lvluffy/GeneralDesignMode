@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">设计模式</string>
+
+    <!--设计模式分类-->
+    <string name="design_mode_type_create">创建型</string>
+    <string name="design_mode_type_structure">结构型</string>
+    <string name="design_mode_type_behavior">行为型</string>
+    <string name="design_mode_type_all">所有</string>
+
+    <!--设计模式相关界面名称-->
+    <string name="ui_test_builder_mode">Builder(构建者)模式</string>
+    <string name="ui_test_prototype_mode">原型模式</string>
+    <string name="ui_test_factory_mode">工厂方法模式</string>
+    <string name="ui_test_abstract_factory_mode">抽象工厂模式</string>
+    <string name="ui_test_singleton_mode">单例模式</string>
+    <string name="ui_test_stragety_mode">策略模式</string>
+    <string name="ui_test_state_mode">状态模式</string>
+    <string name="ui_test_iterator_mode">责任链模式</string>
+    <string name="ui_test_interpreter_mode">解释器模式</string>
+    <string name="ui_test_command_mode">命令模式</string>
+    <string name="ui_test_event_bus_mode">事件总线模式（观察者模式典例）</string>
+    <string name="ui_test_observer_mode">观察者模式</string>
+    <string name="ui_test_memento_mode">备忘录模式</string>
+    <string name="ui_test_iterator_cursor_mode">迭代器模式</string>
+    <string name="ui_test_template_method_mode">模块方法模式</string>
+    <string name="ui_test_visitor_mode">访问者模式</string>
+    <string name="ui_test_mediator_mode">中介者模式</string>
+    <string name="ui_test_proxy_mode">代理模式</string>
+    <string name="ui_test_composite_mode">组合模式</string>
+    <string name="ui_test_adapter_mode">适配器模式</string>
+    <string name="ui_test_decorator_mode">装饰模式</string>
+    <string name="ui_test_flyweight_mode">享元模式</string>
+    <string name="ui_test_facade_mode">外观模式</string>
+    <string name="ui_test_bridge_mode">桥接模式</string>
+</resources>

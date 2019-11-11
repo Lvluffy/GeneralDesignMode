@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.luffy.generaldesignmode">
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.main.entrance.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 设计模式~构建者模式界面 -->
+        <activity
+            android:name=".ui.create.BuilderModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 设计模式~原型模式界面 -->
+        <activity
+            android:name=".ui.create.PrototypeModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 设计模式~工厂方法模式界面 -->
+        <activity
+            android:name=".ui.create.FactoryModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 设计模式~抽象工厂模式界面 -->
+        <activity
+            android:name=".ui.create.AbstractFactoryModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 设计模式~单例模式界面 -->
+        <activity
+            android:name=".ui.create.SingletonModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 设计模式~策略模式界面 -->
+        <activity
+            android:name=".ui.behavior.StragetyModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 设计模式~状态模式界面 -->
+        <activity
+            android:name=".ui.behavior.StateModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 设计模式~责任链模式界面 -->
+        <activity
+            android:name=".ui.behavior.ResponsibilityModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 设计模式~解释器模式界面 -->
+        <activity
+            android:name=".ui.behavior.InterpreterModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 设计模式~命令模式界面 -->
+        <activity
+            android:name=".ui.behavior.CommandModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 设计模式~观察者模式界面 -->
+        <activity
+            android:name=".ui.behavior.ObserverModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 设计模式~备忘录模式界面 -->
+        <activity
+            android:name=".ui.behavior.MementoModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 设计模式~迭代器模式界面 -->
+        <activity
+            android:name=".ui.behavior.IteratorModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 设计模式~模块方法模式界面 -->
+        <activity
+            android:name=".ui.behavior.TemplateMrthodModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 设计模式~访问者模式界面 -->
+        <activity
+            android:name=".ui.behavior.VisitorModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 设计模式~中介者模式界面 -->
+        <activity
+            android:name=".ui.behavior.MediatorModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 设计模式~代理模式界面 -->
+        <activity
+            android:name=".ui.structure.ProxyModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 设计模式~组合模式界面 -->
+        <activity
+            android:name=".ui.structure.CompositeModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 设计模式~适配器模式界面 -->
+        <activity
+            android:name=".ui.structure.AdapterModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 设计模式~装饰模式界面 -->
+        <activity
+            android:name=".ui.structure.DecoratorModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 设计模式~享元模式界面 -->
+        <activity
+            android:name=".ui.structure.FlyweightModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 设计模式~外观模式界面 -->
+        <activity
+            android:name=".ui.structure.FacadeModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!-- 设计模式~桥接模式界面 -->
+        <activity
+            android:name=".ui.structure.BridgeModeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
