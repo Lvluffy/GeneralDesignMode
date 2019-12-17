@@ -34,11 +34,7 @@ public class CompositeModeTest {
         /*图片目录下有文件：沙漠风景.jpg*/
         dirPicture.addDir(new File("沙漠风景.jpg"));
         dir.addDir(dirPicture);
-
-        /*组装数据*/
-        StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append(dir.operation());
-        return stringBuffer.toString();
+        return dir.operation();
     }
 
     public static void main(String[] args) {

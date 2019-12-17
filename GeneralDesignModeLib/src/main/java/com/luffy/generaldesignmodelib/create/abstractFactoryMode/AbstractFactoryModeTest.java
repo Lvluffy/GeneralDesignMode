@@ -24,16 +24,15 @@ public class AbstractFactoryModeTest {
         /*Q7汽车*/
         AbstractFactoryCar factoryQ7 = new ConcreteFactoryCarQ7();
         /*组装数据*/
-        StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append("----------Q3汽车----------\n");
-        stringBuffer.append(factoryQ3.createProductTire().tire());
-        stringBuffer.append(factoryQ3.createProductEngine().engine());
-        stringBuffer.append(factoryQ3.createProductBrake().brake());
-        stringBuffer.append("----------Q7汽车----------\n");
-        stringBuffer.append(factoryQ7.createProductTire().tire());
-        stringBuffer.append(factoryQ7.createProductEngine().engine());
-        stringBuffer.append(factoryQ7.createProductBrake().brake());
-        return stringBuffer.toString();
+        String s = "----------Q3汽车----------\n" +
+                factoryQ3.createProductTire().tire() +
+                factoryQ3.createProductEngine().engine() +
+                factoryQ3.createProductBrake().brake() +
+                "----------Q7汽车----------\n" +
+                factoryQ7.createProductTire().tire() +
+                factoryQ7.createProductEngine().engine() +
+                factoryQ7.createProductBrake().brake();
+        return s;
     }
 
     public static void main(String[] args) {

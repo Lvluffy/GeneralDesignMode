@@ -29,6 +29,11 @@ public class SingletonModeActivity extends BaseActivity {
     }
 
     @Override
+    public void initReceiveData() {
+
+    }
+
+    @Override
     public void initView() {
         txt_show.setText(R.string.ui_test_singleton_mode);
     }

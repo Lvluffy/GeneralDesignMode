@@ -29,6 +29,6 @@ public class DesignBaseViewHolder extends BaseViewHolder {
      */
     @Override
     protected void initView(View view) {
-        textView = (TextView) view.findViewById(R.id.txt_class_item);
+        textView = view.findViewById(R.id.txt_class_item);
     }
 }

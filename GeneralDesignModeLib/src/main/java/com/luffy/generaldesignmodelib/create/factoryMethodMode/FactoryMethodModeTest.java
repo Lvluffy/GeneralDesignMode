@@ -25,10 +25,9 @@ public class FactoryMethodModeTest {
         benChiCar.drive();
         benChiCar.selfNavigation();
         /*组装数据*/
-        StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append(baoMaCar.toString());
-        stringBuffer.append(benChiCar.toString());
-        return stringBuffer.toString();
+        String s = baoMaCar.toString() +
+                benChiCar.toString();
+        return s;
     }
 
     public static void main(String[] args) {

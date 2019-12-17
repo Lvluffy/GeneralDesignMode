@@ -1,7 +1,6 @@
 package com.luffy.generaldesignmode.ui.main.entrance;
 
 import android.graphics.drawable.Drawable;
-import android.os.Build;
 import android.support.v4.app.FragmentTabHost;
 import android.support.v4.view.ViewPager;
 import android.view.Gravity;
@@ -12,12 +11,12 @@ import android.widget.TabHost;
 import android.widget.TextView;
 
 import com.luffy.generaldesignmode.R;
-import com.luffy.dialoglib.toast.ToastBuilder;
 import com.luffy.generaldesignmode.base.BaseActivity;
 import com.luffy.generaldesignmode.base.BaseFragment;
 import com.luffy.generaldesignmode.base.BaseViewPagerAdapter;
-import com.luffy.utilslib.utils.AppUtils;
-import com.luffy.utilslib.utils.DoubleClickExitUtils;
+import com.luffy.generaldialoglib.toast.ToastBuilder;
+import com.luffy.generalutilslib.utils.AppUtils;
+import com.luffy.generalutilslib.utils.DoubleClickExitUtils;
 
 import java.util.ArrayList;
 
@@ -49,6 +48,11 @@ public class MainActivity extends BaseActivity implements
     }
 
     @Override
+    public void initReceiveData() {
+
+    }
+
+    @Override
     public void initView() {
         /*初始化选项卡*/
         initTabHost();
@@ -63,13 +67,10 @@ public class MainActivity extends BaseActivity implements
         /*设置~选项卡点击时，加载Fragment区域*/
         tabhost.setup(this, getSupportFragmentManager(), R.id.viewPager);
         /*去除选项卡之间的分割线~可有可无（主要是UI上显示）*/
-        if (Build.VERSION.SDK_INT > 10) {
-            tabhost.getTabWidget().setShowDividers(0);
-        }
+        tabhost.getTabWidget().setShowDividers(0);
         /*获取子项模块的界面以及进行遍历处理*/
         MainTabHost[] tabHosts = MainTabHost.values();
-        for (int i = 0; i < tabHosts.length; i++) {
-            MainTabHost tabHost = tabHosts[i];
+        for (MainTabHost tabHost : tabHosts) {
             TabHost.TabSpec tab = tabhost.newTabSpec(getString(tabHost.getName()));
             /*选项卡~子项布局~获取*/
             View indicator = LayoutInflater.from(getApplicationContext()).inflate(R.layout.layout_tabhost, null);

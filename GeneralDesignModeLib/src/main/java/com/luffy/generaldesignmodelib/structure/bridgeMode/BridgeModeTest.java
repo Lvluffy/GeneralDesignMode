@@ -27,12 +27,11 @@ public class BridgeModeTest {
         /*小杯加糖*/
         RefinedAbstractionCoffeeSmall coffeeSmallSugar = new RefinedAbstractionCoffeeSmall(coffeeSugar);
         /*组装数据*/
-        StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append(coffeeLargeOrdinary.operationCoffee());
-        stringBuffer.append(coffeeLargeSugar.operationCoffee());
-        stringBuffer.append(coffeeSmallOrdinary.operationCoffee());
-        stringBuffer.append(coffeeSmallSugar.operationCoffee());
-        return stringBuffer.toString();
+        String s = coffeeLargeOrdinary.operationCoffee() +
+                coffeeLargeSugar.operationCoffee() +
+                coffeeSmallOrdinary.operationCoffee() +
+                coffeeSmallSugar.operationCoffee();
+        return s;
     }
 
     public static void main(String[] args) {

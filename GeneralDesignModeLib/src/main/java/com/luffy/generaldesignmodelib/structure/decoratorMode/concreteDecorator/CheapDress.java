@@ -32,10 +32,9 @@ public class CheapDress extends Dress {
 
     @Override
     public String dressed() {
-        StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append(super.dressed());
-        stringBuffer.append(dressShorts());
-        stringBuffer.append("\n");
-        return stringBuffer.toString();
+        String s = super.dressed() +
+                dressShorts() +
+                "\n";
+        return s;
     }
 }

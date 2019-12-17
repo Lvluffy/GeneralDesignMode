@@ -5,8 +5,8 @@ import android.content.Intent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import com.luffy.generaldesignmode.R;
 
+import com.luffy.generaldesignmode.R;
 import com.luffy.generaldesignmode.base.BaseListAdapter;
 import com.luffy.generaldesignmode.mode.BaseBean;
 

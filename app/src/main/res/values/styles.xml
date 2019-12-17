@@ -1,6 +1,6 @@
 <resources>
     <!--应用主题-->
-    <style name="AppTheme" parent="@style/BaseLayerTheme"></style>
+    <style name="AppTheme" parent="@style/BaseLayerTheme" />
     <!--公共主题-->
     <style name="BaseLayerTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowBackground">@color/color_F6F6F6</item>

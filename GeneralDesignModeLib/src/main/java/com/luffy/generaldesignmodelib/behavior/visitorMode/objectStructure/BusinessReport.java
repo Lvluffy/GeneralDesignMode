@@ -32,10 +32,10 @@ public class BusinessReport {
      * @param obstractVisitor 公司高层：如CEO、CTO
      */
     public String showReport(ObstractVisitor obstractVisitor) {
-        StringBuffer stringBuffer = new StringBuffer();
+        StringBuilder stringBuilder = new StringBuilder();
         for (AbstractElementStaff abstractElementStaff : abstractElementStaffs) {
-            stringBuffer.append(abstractElementStaff.accept(obstractVisitor) + "\n");
+            stringBuilder.append(abstractElementStaff.accept(obstractVisitor)).append("\n");
         }
-        return stringBuffer.toString();
+        return stringBuilder.toString();
     }
 }

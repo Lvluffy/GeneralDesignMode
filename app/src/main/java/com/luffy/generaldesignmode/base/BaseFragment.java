@@ -3,7 +3,7 @@ package com.luffy.generaldesignmode.base;
 
 import android.view.View;
 
-import com.luffy.uilib.android.fragment.BaseLayerFragment;
+import com.luffy.generalandroidlib.android.fragment.BaseLayerFragment;
 
 import butterknife.ButterKnife;
 

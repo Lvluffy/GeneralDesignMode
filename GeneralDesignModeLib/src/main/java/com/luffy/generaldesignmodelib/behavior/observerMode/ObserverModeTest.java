@@ -25,9 +25,7 @@ public class ObserverModeTest {
         observable.addObserver(observer3);
         /*组装数据*/
         //发布消息
-        StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append(observable.notifyObserver("新的开发技术前线周报发布啦~"));
-        return stringBuffer.toString();
+        return observable.notifyObserver("新的开发技术前线周报发布啦~");
     }
 
     public static void main(String[] args) {

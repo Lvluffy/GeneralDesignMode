@@ -17,12 +17,11 @@ public class VisitorModeTest {
         /*创建报表*/
         BusinessReport businessReport = new BusinessReport();
         /*组装数据*/
-        StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append("-----给CEO看的报表-----\n");
-        stringBuffer.append(businessReport.showReport(new ConcreteVisitorCEO()) + "\n");
-        stringBuffer.append("-----给CTO看的报表-----\n");
-        stringBuffer.append(businessReport.showReport(new ConcreteVisitorCTO()));
-        return stringBuffer.toString();
+        String s = "-----给CEO看的报表-----\n" +
+                businessReport.showReport(new ConcreteVisitorCEO()) + "\n" +
+                "-----给CTO看的报表-----\n" +
+                businessReport.showReport(new ConcreteVisitorCTO());
+        return s;
     }
 
     public static void main(String[] args) {

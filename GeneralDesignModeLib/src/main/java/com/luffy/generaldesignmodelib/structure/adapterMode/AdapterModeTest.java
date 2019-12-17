@@ -16,10 +16,9 @@ public class AdapterModeTest {
         /*创建一个适配器对象*/
         Adapter adapter = new Adapter(adaptee);
         /*组装数据*/
-        StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append("需要适配的电压：" + adapter.getAdapteeVolt() + "V\n");
-        stringBuffer.append("输出电压：" + adapter.request() + "V");
-        return stringBuffer.toString();
+        String s = "需要适配的电压：" + adapter.getAdapteeVolt() + "V\n" +
+                "输出电压：" + adapter.request() + "V";
+        return s;
     }
 
     public static void main(String[] args) {

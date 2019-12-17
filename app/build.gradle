@@ -44,10 +44,12 @@ dependencies {
     /*butterknife*/
     compile 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-    /*UI*/
-    compile 'com.github.Lvluffy:ui:1.0.8'
-    /*工具*/
-    compile 'com.github.Lvluffy:utils:1.0.9'
-    /*对话框*/
-    compile 'com.github.Lvluffy:dialog:1.0.1'
+    /*通用Android*/
+    compile 'com.github.Lvluffy:GeneralAndroid:1.0.5'
+    /*通用工具*/
+    compile 'com.github.Lvluffy:GeneralUtils:1.1.0'
+    /*通用弹框*/
+    compile 'com.github.Lvluffy:GeneralDialog:1.0.7'
+    /*资源*/
+    compile 'com.github.Lvluffy:GeneralResourse:1.0.0'
 }

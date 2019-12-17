@@ -22,12 +22,12 @@ public class FlyweightModeTest {
         AbstractFlyweigetTicket ticket2 = factoryTicket.getTicket("北京", "上海");
         AbstractFlyweigetTicket ticket3 = factoryTicket.getTicket("北京", "天津");
         /*组装数据*/
-        StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append(ticket1.operation(new UnsharedConcreteFlyweightTicket("硬卧", new Random().nextInt(300))) + "\n");
-        stringBuffer.append(ticket2.operation(new UnsharedConcreteFlyweightTicket("软卧", new Random().nextInt(300))) + "\n");
-        stringBuffer.append(ticket3.operation(new UnsharedConcreteFlyweightTicket("硬座", new Random().nextInt(300))) + "\n");
-        stringBuffer.append(ticket3.operation(new UnsharedConcreteFlyweightTicket("软座", new Random().nextInt(300))) + "\n");
-        return stringBuffer.toString();
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(ticket1.operation(new UnsharedConcreteFlyweightTicket("硬卧", new Random().nextInt(300)))).append("\n");
+        stringBuilder.append(ticket2.operation(new UnsharedConcreteFlyweightTicket("软卧", new Random().nextInt(300)))).append("\n");
+        stringBuilder.append(ticket3.operation(new UnsharedConcreteFlyweightTicket("硬座", new Random().nextInt(300)))).append("\n");
+        stringBuilder.append(ticket3.operation(new UnsharedConcreteFlyweightTicket("软座", new Random().nextInt(300)))).append("\n");
+        return stringBuilder.toString();
     }
 
     public static void main(String[] args) {

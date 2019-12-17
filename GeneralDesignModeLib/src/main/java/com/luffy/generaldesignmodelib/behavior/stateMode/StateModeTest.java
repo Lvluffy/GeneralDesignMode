@@ -26,28 +26,27 @@ public class StateModeTest {
         StateContextTv stateContextTvOff = new StateContextTv();
         stateContextTvOff.setAbstractStateTv(new ConcreteStateTvOff());
         /*组装数据*/
-        StringBuffer stringBuffer = new StringBuffer();
         //设置开机状态
-        stringBuffer.append(stateContextPower.powerOn() + "\n");
         //上一频道
-        stringBuffer.append(stateContextTvOn.prevChannal() + "\n");
         //下一频道
-        stringBuffer.append(stateContextTvOn.nextChannal() + "\n");
         //调高音量
-        stringBuffer.append(stateContextTvOn.turnUp() + "\n");
         //调低音量
-        stringBuffer.append(stateContextTvOn.turnDown() + "\n");
         //设置关机状态
-        stringBuffer.append(stateContextPower.powerOff() + "\n");
         //上一频道
-        stringBuffer.append(stateContextTvOff.prevChannal() + "\n");
         //下一频道
-        stringBuffer.append(stateContextTvOff.nextChannal() + "\n");
         //调高音量
-        stringBuffer.append(stateContextTvOff.turnUp() + "\n");
         //调低音量
-        stringBuffer.append(stateContextTvOff.turnDown() + "\n");
-        return stringBuffer.toString();
+        String s = stateContextPower.powerOn() + "\n" +
+                stateContextTvOn.prevChannal() + "\n" +
+                stateContextTvOn.nextChannal() + "\n" +
+                stateContextTvOn.turnUp() + "\n" +
+                stateContextTvOn.turnDown() + "\n" +
+                stateContextPower.powerOff() + "\n" +
+                stateContextTvOff.prevChannal() + "\n" +
+                stateContextTvOff.nextChannal() + "\n" +
+                stateContextTvOff.turnUp() + "\n" +
+                stateContextTvOff.turnDown() + "\n";
+        return s;
     }
 
     public static void main(String[] args) {

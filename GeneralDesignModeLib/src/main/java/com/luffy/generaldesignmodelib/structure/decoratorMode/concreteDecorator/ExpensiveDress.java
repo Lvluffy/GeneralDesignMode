@@ -49,12 +49,11 @@ public class ExpensiveDress extends Dress {
 
     @Override
     public String dressed() {
-        StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append(super.dressed());
-        stringBuffer.append(dressShirt());
-        stringBuffer.append(dressLeather());
-        stringBuffer.append(dressJean());
-        stringBuffer.append("\n");
-        return stringBuffer.toString();
+        String s = super.dressed() +
+                dressShirt() +
+                dressLeather() +
+                dressJean() +
+                "\n";
+        return s;
     }
 }

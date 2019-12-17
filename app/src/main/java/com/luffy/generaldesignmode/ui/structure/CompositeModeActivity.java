@@ -2,9 +2,9 @@ package com.luffy.generaldesignmode.ui.structure;
 
 import android.widget.TextView;
 
-import com.luffy.generaldesignmodelib.structure.compositeMode.CompositeModeTest;
 import com.luffy.generaldesignmode.R;
 import com.luffy.generaldesignmode.base.BaseActivity;
+import com.luffy.generaldesignmodelib.structure.compositeMode.CompositeModeTest;
 
 import butterknife.BindView;
 
@@ -27,6 +27,11 @@ public class CompositeModeActivity extends BaseActivity {
     @Override
     public int setLayoutView() {
         return R.layout.activity_design_mode_base;
+    }
+
+    @Override
+    public void initReceiveData() {
+
     }
 
     /**

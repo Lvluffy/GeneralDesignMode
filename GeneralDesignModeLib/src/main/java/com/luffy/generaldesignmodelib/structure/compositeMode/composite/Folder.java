@@ -39,21 +39,21 @@ public class Folder implements Dir {
 
     @Override
     public String operation() {
-        StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append(name + "（");
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(name).append("（");
         Iterator<Dir> iterator = getDirs().iterator();
         while (iterator.hasNext()) {
             Dir dir = iterator.next();
             /*递归操作*/
             String str = dir.operation();
             /*这里必须要手动加一次数据，否则界面中出不来*/
-            stringBuffer.append(str);
+            stringBuilder.append(str);
             if (iterator.hasNext()) {
-                stringBuffer.append("，");
+                stringBuilder.append("，");
             }
         }
-        stringBuffer.append("）");
-        return stringBuffer.toString();
+        stringBuilder.append("）");
+        return stringBuilder.toString();
     }
 
     /**

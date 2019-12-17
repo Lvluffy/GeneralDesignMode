@@ -7,7 +7,7 @@ import com.luffy.generaldesignmode.base.BaseFragment;
 import com.luffy.generaldesignmode.ui.base.DesignBaseAdapter;
 import com.luffy.generaldesignmode.ui.base.DesignBaseBean;
 import com.luffy.generaldesignmode.ui.manager.DesignModeTypeAllManager;
-import com.luffy.utilslib.utils.ValidUtils;
+import com.luffy.generalutilslib.utils.ValidUtils;
 
 import java.util.ArrayList;
 
@@ -33,13 +33,17 @@ public class TabAllFragment extends BaseFragment {
     }
 
     @Override
+    public void initReceiveData() {
+
+    }
+
+    @Override
     public void initView() {
         if (ValidUtils.getInstance().isValid(list) && list.size() > 0) {
             list.clear();
         }
         DesignModeTypeAllManager[] tabs = DesignModeTypeAllManager.values();
-        for (int i = 0; i < tabs.length; i++) {
-            DesignModeTypeAllManager tab = tabs[i];
+        for (DesignModeTypeAllManager tab : tabs) {
             DesignBaseBean viewBean = new DesignBaseBean();
             viewBean.setHint((tab.getId() + 1) + "、" + getString(tab.getName()));
             viewBean.setActivityName(tab.getClz());

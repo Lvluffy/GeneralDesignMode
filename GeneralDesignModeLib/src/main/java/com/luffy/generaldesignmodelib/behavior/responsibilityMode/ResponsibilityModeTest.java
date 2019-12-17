@@ -15,7 +15,7 @@ import com.luffy.generaldesignmodelib.behavior.responsibilityMode.concreteHandle
 public class ResponsibilityModeTest {
 
     public static String testResponsibilityMode() {
-        StringBuffer stringBuffer = new StringBuffer();
+        StringBuilder stringBuilder = new StringBuilder();
         /*构建各个领导对象*/
         AbstractHandlerLeaderGroup group = new AbstractHandlerLeaderGroup();
         AbstractHandlerLeaderDirector director = new AbstractHandlerLeaderDirector();
@@ -26,8 +26,8 @@ public class ResponsibilityModeTest {
         director.next = manager;
         manager.next = boss;
         /*发起报销申请*/
-        stringBuffer.append(group.handleRequest(50000));
-        return stringBuffer.toString();
+        stringBuilder.append(group.handleRequest(50000));
+        return stringBuilder.toString();
     }
 
     public static void main(String[] args) {

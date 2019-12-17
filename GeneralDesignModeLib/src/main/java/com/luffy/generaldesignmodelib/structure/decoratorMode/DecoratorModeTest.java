@@ -25,11 +25,10 @@ public class DecoratorModeTest {
         ExpensiveDress expensiveDress = new ExpensiveDress(xiaoLiang);
 
         /*组装数据*/
-        StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append(cheapDress.dressed());
-        stringBuffer.append("---------------\n");
-        stringBuffer.append(expensiveDress.dressed());
-        return stringBuffer.toString();
+        String s = cheapDress.dressed() +
+                "---------------\n" +
+                expensiveDress.dressed();
+        return s;
     }
 
     public static void main(String[] args) {

@@ -21,7 +21,7 @@ public class ConcreteStragetyCalculateBus implements AbstractStragetyCalculate {
         /*超过的距离对5公里取余*/
         int fraction = extraJourney % 5;
         /*价格计算*/
-        int price = 1 + extraFactor * 1;
+        int price = 1 + extraFactor;
         return fraction > 0 ? ++price : price;
     }
 }

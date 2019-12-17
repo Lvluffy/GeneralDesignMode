@@ -22,17 +22,16 @@ public class ConcreteFlyweightTicket implements AbstractFlyweigetTicket {
 
     @Override
     public String operation(UnsharedConcreteFlyweightTicket ticketInfo) {
-        StringBuilder mStringBuilder = new StringBuilder();
-        mStringBuilder.append("购买从")
-                .append(from)
-                .append("到")
-                .append(to)
-                .append("的")
-                .append(ticketInfo.getBunk())
-                .append("火车票，价格：")
-                .append(ticketInfo.getPrice())
-                .append("元");
-        return mStringBuilder.toString();
+        String s = "购买从" +
+                from +
+                "到" +
+                to +
+                "的" +
+                ticketInfo.getBunk() +
+                "火车票，价格：" +
+                ticketInfo.getPrice() +
+                "元";
+        return s;
     }
 
 }

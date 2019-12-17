@@ -19,10 +19,9 @@ public class TemplateMethodModeTest {
         /*创建军用计算机*/
         AbsComputer computerMilitary = new MilitaryComputer();
         /*组装数据*/
-        StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append(computerCoder.execute());
-        stringBuffer.append(computerMilitary.execute());
-        return stringBuffer.toString();
+        String s = computerCoder.execute() +
+                computerMilitary.execute();
+        return s;
     }
 
     public static void main(String[] args) {

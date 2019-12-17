@@ -75,12 +75,9 @@ public class ConcreteMediatorMainBoard extends AbstractMediator {
      * @return
      */
     private String handleCPU(ConcreteColleagueCPU concreteColleagueCPU) {
-        StringBuffer stringBuffer = new StringBuffer();
-        /*显卡同事播放视频*/
-        stringBuffer.append(concreteColleagueGraphicsCard.videoPlay(concreteColleagueCPU.getDataVideo()) + "\n");
-        /*声卡同事播放音频*/
-        stringBuffer.append(concreteColleagueSoundCard.soundPlay(concreteColleagueCPU.getDataSound()));
-        return stringBuffer.toString();
+        String s = concreteColleagueGraphicsCard.videoPlay(concreteColleagueCPU.getDataVideo()) + "\n" +
+                concreteColleagueSoundCard.soundPlay(concreteColleagueCPU.getDataSound());
+        return s;
     }
 
     /**

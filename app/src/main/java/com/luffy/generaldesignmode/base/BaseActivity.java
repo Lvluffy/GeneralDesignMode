@@ -1,6 +1,8 @@
 package com.luffy.generaldesignmode.base;
 
-import com.luffy.uilib.android.activity.BaseLayerActivity;
+import android.app.Activity;
+
+import com.luffy.generalandroidlib.android.activity.BaseLayerActivity;
 
 import butterknife.ButterKnife;
 
@@ -10,8 +12,8 @@ import butterknife.ButterKnife;
 public abstract class BaseActivity extends BaseLayerActivity {
 
     @Override
-    public void bindButterKnife() {
-        ButterKnife.bind(this);
+    public void bindButterKnife(Activity target) {
+        ButterKnife.bind(target);
     }
 
     @Override

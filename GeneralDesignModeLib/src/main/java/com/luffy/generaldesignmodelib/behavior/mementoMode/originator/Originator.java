@@ -39,16 +39,16 @@ public class Originator {
      * @return
      */
     public String play() {
-        StringBuffer stringBuffer = new StringBuffer();
+        StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < 3; i++) {
-            stringBuffer.append("玩游戏:\n" + String.format("第%d关", checkpoint) + "奋战杀敌中." + "\n");
+            stringBuilder.append("玩游戏:\n").append(String.format("第%d关", checkpoint)).append("奋战杀敌中.").append("\n");
             lifeValue -= 10;
-            stringBuffer.append("进度升级啦" + "\n");
+            stringBuilder.append("进度升级啦" + "\n");
             checkpoint++;
-            stringBuffer.append("到达" + String.format("第%d关", checkpoint) + "\n");
-            stringBuffer.append("---------------\n");
+            stringBuilder.append("到达").append(String.format("第%d关", checkpoint)).append("\n");
+            stringBuilder.append("---------------\n");
         }
-        return stringBuffer.toString();
+        return stringBuilder.toString();
     }
 
     /**
@@ -57,11 +57,10 @@ public class Originator {
      * @return
      */
     public String quit() {
-        StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append("退出前的游戏属性:\n" + this.toString());
-        stringBuffer.append("退出游戏\n");
-        stringBuffer.append("---------------\n");
-        return stringBuffer.toString();
+        String s = "退出前的游戏属性:\n" + this.toString() +
+                "退出游戏\n" +
+                "---------------\n";
+        return s;
     }
 
     /**

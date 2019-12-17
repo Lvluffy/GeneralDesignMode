@@ -2,9 +2,9 @@ package com.luffy.generaldesignmode.ui.behavior;
 
 import android.widget.TextView;
 
-import com.luffy.generaldesignmodelib.behavior.templateMethodMode.TemplateMethodModeTest;
 import com.luffy.generaldesignmode.R;
 import com.luffy.generaldesignmode.base.BaseActivity;
+import com.luffy.generaldesignmodelib.behavior.templateMethodMode.TemplateMethodModeTest;
 
 import butterknife.BindView;
 
@@ -27,6 +27,11 @@ public class TemplateMrthodModeActivity extends BaseActivity {
     @Override
     public int setLayoutView() {
         return R.layout.activity_design_mode_base;
+    }
+
+    @Override
+    public void initReceiveData() {
+
     }
 
     /**

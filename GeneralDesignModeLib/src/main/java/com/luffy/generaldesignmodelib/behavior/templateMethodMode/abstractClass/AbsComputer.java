@@ -49,13 +49,12 @@ public abstract class AbsComputer {
      * @return
      */
     public final String execute() {
-        StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append("-----开机Start-----\n");
-        stringBuffer.append(powerOpen() + "\n");
-        stringBuffer.append(checkHardware() + "\n");
-        stringBuffer.append(loadOS() + "\n");
-        stringBuffer.append(login() + "\n");
-        stringBuffer.append("-----关机End-----\n");
-        return stringBuffer.toString();
+        String s = "-----开机Start-----\n" +
+                powerOpen() + "\n" +
+                checkHardware() + "\n" +
+                loadOS() + "\n" +
+                login() + "\n" +
+                "-----关机End-----\n";
+        return s;
     }
 }

@@ -2,9 +2,9 @@ package com.luffy.generaldesignmode.ui.behavior;
 
 import android.widget.TextView;
 
-import com.luffy.generaldesignmodelib.behavior.commandMode.CommandModeTest;
 import com.luffy.generaldesignmode.R;
 import com.luffy.generaldesignmode.base.BaseActivity;
+import com.luffy.generaldesignmodelib.behavior.commandMode.CommandModeTest;
 
 import butterknife.BindView;
 
@@ -28,6 +28,12 @@ public class CommandModeActivity extends BaseActivity {
     public int setLayoutView() {
         return R.layout.activity_design_mode_base;
     }
+
+    @Override
+    public void initReceiveData() {
+
+    }
+
     @Override
     public void initView() {
         /*测试命令模式*/

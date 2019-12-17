@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
-
 import com.luffy.generaldesignmode.mode.BaseBean;
 
 import java.util.ArrayList;
@@ -81,7 +80,7 @@ public abstract class BaseListAdapter<T extends BaseBean> extends BaseAdapter {
      * @return
      */
     public ArrayList<T> getData() {
-        return mDatas == null ? (mDatas = new ArrayList<T>()) : mDatas;
+        return mDatas == null ? (mDatas = new ArrayList<>()) : mDatas;
     }
 
     /**

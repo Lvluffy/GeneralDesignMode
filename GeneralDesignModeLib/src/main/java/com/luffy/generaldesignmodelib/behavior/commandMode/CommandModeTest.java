@@ -30,12 +30,11 @@ public class CommandModeTest {
         invoker.setCommandBottom(commandFastToBottom);
         invoker.setCommandTop(commandTransfrom);
         /*组装数据*/
-        StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append(invoker.toLeft() + "\n");
-        stringBuffer.append(invoker.toRight() + "\n");
-        stringBuffer.append(invoker.toBottom() + "\n");
-        stringBuffer.append(invoker.toTop() + "\n");
-        return stringBuffer.toString();
+        String s = invoker.toLeft() + "\n" +
+                invoker.toRight() + "\n" +
+                invoker.toBottom() + "\n" +
+                invoker.toTop() + "\n";
+        return s;
     }
 
     public static void main(String[] args) {

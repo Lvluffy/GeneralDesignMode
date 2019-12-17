@@ -2,9 +2,9 @@ package com.luffy.generaldesignmode.ui.create;
 
 import android.widget.TextView;
 
-import com.luffy.generaldesignmodelib.create.abstractFactoryMode.AbstractFactoryModeTest;
 import com.luffy.generaldesignmode.R;
 import com.luffy.generaldesignmode.base.BaseActivity;
+import com.luffy.generaldesignmodelib.create.abstractFactoryMode.AbstractFactoryModeTest;
 
 import butterknife.BindView;
 
@@ -28,6 +28,11 @@ public class AbstractFactoryModeActivity extends BaseActivity {
     @Override
     public int setLayoutView() {
         return R.layout.activity_design_mode_base;
+    }
+
+    @Override
+    public void initReceiveData() {
+
     }
 
     @Override

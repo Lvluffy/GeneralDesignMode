@@ -18,14 +18,13 @@ public class MementoModeTest {
         Caretaker caretaker = new Caretaker();
         caretaker.setMemento(originator.createMemento());
         /*组装数据*/
-        StringBuffer stringBuffer = new StringBuffer();
+        String s = originator.play() +
+                originator.quit() +
+                new Originator().restore(caretaker.getMemento());
         //玩游戏
-        stringBuffer.append(originator.play());
         //退出游戏
-        stringBuffer.append(originator.quit());
         //恢复游戏
-        stringBuffer.append(new Originator().restore(caretaker.getMemento()));
-        return stringBuffer.toString();
+        return s;
     }
 
     public static void main(String[] args) {

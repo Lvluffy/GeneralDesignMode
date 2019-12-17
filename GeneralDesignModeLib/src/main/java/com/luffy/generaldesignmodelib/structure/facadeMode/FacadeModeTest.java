@@ -14,12 +14,11 @@ public class FacadeModeTest {
         /*创建外观模式~系统对外的统一接口对象*/
         FacadeMobilePhone facadeMobilePhone = new FacadeMobilePhone();
         /*组装数据*/
-        StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append("-----开启拍照功能-----\n");
-        stringBuffer.append(facadeMobilePhone.takePicture());
-        stringBuffer.append("-----开启打电话功能-----\n");
-        stringBuffer.append(facadeMobilePhone.makePhone());
-        return stringBuffer.toString();
+        String s = "-----开启拍照功能-----\n" +
+                facadeMobilePhone.takePicture() +
+                "-----开启打电话功能-----\n" +
+                facadeMobilePhone.makePhone();
+        return s;
     }
 
     public static void main(String[] args) {

@@ -24,11 +24,11 @@ public class IteratorModeTest {
         /*从容器中获取迭代器*/
         AbstractIterator<Employee> abstractIterator = aggregateConcrete.iterator();
         /*组装数据*/
-        StringBuffer stringBuffer = new StringBuffer();
+        StringBuilder stringBuilder = new StringBuilder();
         while (abstractIterator.hasNext()) {
-            stringBuffer.append(abstractIterator.next().toString() + "\n");
+            stringBuilder.append(abstractIterator.next().toString()).append("\n");
         }
-        return stringBuffer.toString();
+        return stringBuilder.toString();
     }
 
     public static void main(String[] args) {

@@ -17,12 +17,11 @@ public class ProxyModeTest {
         /*构造一个代理律师类*/
         ProxySubjectLawsuitLawxy lawxy = new ProxySubjectLawsuitLawxy(xiaoMin);
         /*组装数据*/
-        StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append(lawxy.submit() + "\n");
-        stringBuffer.append(lawxy.burden() + "\n");
-        stringBuffer.append(lawxy.defend() + "\n");
-        stringBuffer.append(lawxy.finish() + "\n");
-        return stringBuffer.toString();
+        String s = lawxy.submit() + "\n" +
+                lawxy.burden() + "\n" +
+                lawxy.defend() + "\n" +
+                lawxy.finish() + "\n";
+        return s;
     }
 
     public static void main(String[] args) {

@@ -15,7 +15,7 @@ import com.luffy.generaldesignmodelib.behavior.mediatorMode.concreteMediator.Con
 public class MediatorModeTest {
 
     public static String testMediatorMode() {
-        StringBuffer stringBuffer = new StringBuffer();
+        StringBuilder stringBuilder = new StringBuilder();
         /*构造主板中介者对象*/
         ConcreteMediatorMainBoard mediatorMainBoard = new ConcreteMediatorMainBoard();
         /*分别构造各个同事对象*/
@@ -29,8 +29,8 @@ public class MediatorModeTest {
         mediatorMainBoard.setConcreteColleagueGraphicsCard(concreteColleagueGraphicsCard);
         mediatorMainBoard.setConcreteColleagueSoundCard(concreteColleagueSoundCard);
         /*完成后开始处理：这里是开始播放*/
-        stringBuffer.append(concreteColleagueCDDevice.loadData());
-        return stringBuffer.toString();
+        stringBuilder.append(concreteColleagueCDDevice.loadData());
+        return stringBuilder.toString();
     }
 
     public static void main(String[] args) {

@@ -94,7 +94,7 @@ public abstract class AbstractObservable {
      */
     @SuppressWarnings("unchecked")
     public String notifyObservers(Object data) {
-        StringBuffer test = new StringBuffer();
+        StringBuilder test = new StringBuilder();
         int size = 0;
         AbstractObserver[] arrays = null;
         synchronized (this) {
@@ -107,7 +107,7 @@ public abstract class AbstractObservable {
         }
         if (arrays != null) {
             for (AbstractObserver abstractObserver : arrays) {
-                test.append(abstractObserver.update(data) + "\n");
+                test.append(abstractObserver.update(data)).append("\n");
             }
         }
         return test.toString();

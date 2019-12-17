@@ -24,12 +24,9 @@ public class FacadeMobilePhone {
      * @return
      */
     public String makePhone() {
-        StringBuffer stringBuffer = new StringBuffer();
-        /*打电话*/
-        stringBuffer.append(subSystemPhone.dail() + "\n");
-        /*挂断*/
-        stringBuffer.append(subSystemPhone.hangup() + "\n");
-        return stringBuffer.toString();
+        String s = subSystemPhone.dail() + "\n" +
+                subSystemPhone.hangup() + "\n";
+        return s;
     }
 
     /**
@@ -38,13 +35,12 @@ public class FacadeMobilePhone {
      * @return
      */
     public String takePicture() {
-        StringBuffer stringBuffer = new StringBuffer();
         /*打开相机*/
-        stringBuffer.append(subSystemCamera.open() + "\n");
         /*拍照*/
-        stringBuffer.append(subSystemCamera.takePicture() + "\n");
         /*关闭相机*/
-        stringBuffer.append(subSystemCamera.close() + "\n");
-        return stringBuffer.toString();
+        String s = subSystemCamera.open() + "\n" +
+                subSystemCamera.takePicture() + "\n" +
+                subSystemCamera.close() + "\n";
+        return s;
     }
 }
